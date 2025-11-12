@@ -162,13 +162,13 @@ a {
     margin-bottom: 10px;
 } */
 
-.teste{
+.teste {
     display: flex;
     flex-wrap: wrap;
     gap: 50px 50px;
 }
 
-#cartao{
+#cartao {
     background-color: rgb(255, 255, 255);
     border: 5px solid rgb(0, 0, 0);
     padding: 20px;
@@ -176,7 +176,7 @@ a {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
 }
 
@@ -186,19 +186,20 @@ a {
     justify-content: space-around;
 }
 
-.cabecalho_card{
+.cabecalho_card {
     display: flex;
     justify-content: space-between;
 }
 
-.fechar{
-    font-size: 48px;
-    padding:5px 12px;
+.fechar {
+    padding: 3px 3px;
     border: 2px solid black;
-
+    border-radius: 10px;
+    transition: 1s;
 }
 
-.fechar:hover{
-    color: red;
-    border-color: red;
+.fechar:hover {
+    color: rgb(10, 11, 10);
+    border-color: rgb(87, 85, 85);
+    background-color: gray;
 }
