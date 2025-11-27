@@ -1,11 +1,13 @@
 * {
-    margin: 0%;
+   margin: 0%;
 }
 
 /* ... (Mantenha o CSS anterior exatamente igual) ... */
 body {
     background-image: url(./Imagens/fotos/Ceuop1.png);
 }
+
+
 
 .n1 {
     transition: 1s;
@@ -206,6 +208,7 @@ nav a {
 }
 
 footer {
+    position: relative;
     background-color: #004aad;
     color: white;
     padding: 30px 20px;
@@ -480,4 +483,11 @@ h1 {
     width: 60px;
     margin-left: 10px;
     margin-top: 5px;
+}
+
+.bsaibamais{
+    position: absolute;
+    bottom: 26px;
+    right: 20px;
+    border-radius: 15px;
 }
