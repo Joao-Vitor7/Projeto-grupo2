@@ -1,13 +1,18 @@
+:root {
+    --cor-texto: black;
+    --cor-regioes: aliceblue;
+    --cor-cabecalho: #004aad;
+}
+
 * {
-   margin: 0%;
+    margin: 0%;
 }
 
 /* ... (Mantenha o CSS anterior exatamente igual) ... */
 body {
     background-image: url(./Imagens/fotos/Ceuop1.png);
+    color: var(--cor-texto);
 }
-
-
 
 .n1 {
     transition: 1s;
@@ -18,7 +23,7 @@ body {
 }
 
 h3 {
-    font-size: 80px;
+    font-size: 75px;
 }
 
 .carousel-container {
@@ -82,14 +87,14 @@ h3 {
 }
 
 nav a {
-    color: aliceblue;
+    color: var(--cor-regioes);
     text-decoration: none;
 }
 
 
 
 .cabeçalho {
-    background-color: #004aad;
+    background-color: var(--cor-cabecalho);
     padding: 20px;
 }
 
@@ -386,51 +391,6 @@ p {
     font-size: 20px;
 }
 
-@media (max-width: 610px) {
-    .pai {
-        gap: 30px;
-        margin: 20px;
-    }
-
-    .n1 {
-        font-size: 20px;
-    }
-
-    .informacoes2 {
-        flex-direction: column;
-        margin-bottom: 15px;
-    }
-
-    #cartao_titulo,
-    #cartao_texto {
-        font-size: 16px;
-    }
-
-    #imagem {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        aspect-ratio: 2/1;
-        overflow: hidden;
-    }
-
-    .fechar {
-
-        width: 20px;
-        height: 20px;
-    }
-
-    @keyframes slidein {
-        from {
-            transform: translateX(100vw);
-        }
-
-        to {
-            transform: translateX(-10%);
-        }
-    }
-}
 
 .cartao-pag {
     border-radius: 15px;
@@ -485,9 +445,64 @@ h1 {
     margin-top: 5px;
 }
 
-.bsaibamais{
+.bsaibamais {
     position: absolute;
     bottom: 26px;
     right: 20px;
     border-radius: 15px;
+}
+@media (max-width: 600px) {
+    
+    .pai {
+        gap: 30px;
+        margin: 20px;
+    }
+
+    .n1 {
+        font-size: 20px;
+    }
+
+    .informacoes2 {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    #cartao_titulo,
+    #cartao_texto {
+        font-size: 16px;
+    }
+
+    #imagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        aspect-ratio: 2/1;
+        overflow: hidden;
+    }
+
+    .fechar {
+
+        width: 20px;
+        height: 20px;
+    }
+
+    @keyframes slidein {
+        from {
+            transform: translateX(100vw);
+        }
+
+        to {
+            transform: translateX(-10%);
+        }
+    }
+    .carousel-container {
+        width: auto;
+        height: 400px;
+    }
+    
+    footer form{
+        max-width: 300px;
+    }
+
 }
