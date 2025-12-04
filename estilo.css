@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root {
     --cor-texto: black;
     --cor-regioes: aliceblue;
@@ -6,10 +7,30 @@
 
 * {
     margin: 0%;
+=======
+:root {  /* declarar variavel global*/
+
+    --cor-cabecalho: #0B5395;
+    --cor-borda-pagamentos: solid black;
+    --cor-fundo-borda: rgba(133, 177, 255, 0.3);
+    --cor-hover: rgba(133, 177, 255, 0.7);
+    --cor-texto-horario: rgba(133, 177, 255, 0.3);
+    --cor-rodape: #0B5395;
+    --cor-letra-cbc:white;
+    --cor-sombras:black;
+    --borda-horarios:black;
+    --cor-letra-rodape:white;
 }
 
-/* ... (Mantenha o CSS anterior exatamente igual) ... */
+* {
+    box-sizing: border-box; /* propriedade que faz com que altura e largura totais de elemento incluam (margin) e (padding)*/
+    margin: 0; /*sem borda*/
+    padding: 0; /*espaco entre elemento e borda*/
+>>>>>>> Stashed changes
+}
+
 body {
+<<<<<<< Updated upstream
     background-image: url(./Imagens/fotos/Ceuop1.png);
     color: var(--cor-texto);
 }
@@ -29,18 +50,83 @@ h3 {
 .carousel-container {
     width: 600px;
     height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    border: 5px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 50px auto;
+=======
+
+    background-image: url("./Ceuop1.png"); /* caminho para colocar minha imagem*/
+    background-repeat: no-repeat; /* Impede a repetição da imagem*/
+    background-size: cover;  /* Garante que a imagem cubra todo o espaço*/
+    background-attachment: fixed; /* manter imagem fixa*/
 }
 
-.carousel-slide {
+.voadora {
+
+>>>>>>> Stashed changes
     display: flex;
+    width: 100vw; /*relativo ao tamanho da tela do usuario, toda tela*/
+    align-items: center; /* alinhar os itens no centro*/
+
+
+}
+
+.inicio {
+    width: 14%; /* define largura do elemento*/
+}
+
+.fundocabecalho {
+     display: flex; /* container flexivel*/
+     background-color: var(--cor-cabecalho); /* cor do cabecalho*/
+     height: 135px; /* tamanho do cabecalho*/
+     width: 86%; /* define largura do elemento*/
+     font-size: 50px;
+     justify-content:center; /* alinhar no centro*/
+     align-items: center; /* alinhar no centro*/
+     color: var(--cor-letra-cbc); /* cor da letra*/
+     margin-right: 50px; /*margem direita*/
+     text-shadow: 3px 3px 3px var(--cor-sombras); /* adicionar sombras nas palavras"textos"*/
+   
+    
+
+
+    
+}
+
+.imagens {
+    border: 2px var(--cor-borda-pagamentos); /* borda das imagens*/
+    width: 150px; /* largura*/
+    height: 150px; /* altura*/
+    border-radius: 15%; /* borda redonda*/
+    background-color: var(--cor-fundo-borda);/* cor de fundo das imagens de pagamentos*/
+    display: flex;  /* deixa flexivel para alinhar (ajustar)*/
+    align-items: center; /* alinhar imagem no meio de "quadrado"*/
+    justify-content: center; /*alinhar imagem no meio de "quadrado"*/
+
+
+}
+
+.imagens:hover {
+    background-color: var(--cor-hover); /* quando passar o dedo mudar de cor*/
+
+}
+
+.formasdepagamentos {
+
+    width: 80%; /* ocupacao de 80% da tela*/
+
+}
+
+.avo {
+    display: grid; /* permite organizar elementos filhos em linhas ou colunas, facilita a criacao modelos*/
+    grid-template-columns: 150px 150px; /* usada para definirnumero e tamanho das colunas no layout de grade*/
+    grid-template-rows: 150px 150px; /* define altura das linhas da grade(layout)*/
+    gap: 50px;  /* definir espacos (bordas)* no container*/
+
+}
+
+.escritapagamentos {
+
+    font-size: 30px; /* tam. da letra*/
+    display: flex;
+<<<<<<< Updated upstream
     width: 100%;
     height: 100%;
     /* A transição será controlada via JS para o autoplay funcionar bem */
@@ -134,20 +220,14 @@ nav a {
     margin: 0;
     /* Remove a margem padrão do <p> para um alinhamento perfeito */
     font-size: 40px;
+=======
+    justify-content: left; /* justificar a esquerda*/
+>>>>>>> Stashed changes
 
 }
 
-.loguinho {
-    /* Mantenha as configurações de animação no parágrafo */
-    animation-duration: 5s;
-    /* Aumentei para 5s para ficar mais suave */
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    /* Remova as margens padrão do p, se necessário */
-    margin: 0;
-}
 
+<<<<<<< Updated upstream
 @keyframes slidein {
     from {
         /* Começa totalmente fora da tela, à direita (100% do seu próprio tamanho + 100% da tela) */
@@ -219,80 +299,37 @@ footer {
     background-color: #004aad;
     color: white;
     padding: 30px 20px;
+=======
+.organizacaosaibamais {
+    display: flex; /* ficar flexivel*/
+    flex-direction: row; /* alinhar da esquerda para a direita*/
+    justify-content: space-evenly;/* deixar tudo do mesmo tamanho*/
+>>>>>>> Stashed changes
     align-items: center;
 }
 
-footer form {
+.textohorario{
+    border:2px solid  var(--borda-horarios); /* cor e tamanho da borda*/
+    border-radius:15% ;/* borda arredondada*/
+    background-color:var(--cor-texto-horario) ; /* cor de fundo*/
+}
+
+.textohorario p { /* o "P" é para personalizar as escritas*/
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
-
-}
-
-footer input {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-}
-
-footer button {
-    padding: 10px;
-    background-color: white;
-    color: #004aad;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-}
-
-h2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 2rem;
+    line-height: 55px; /* espacamento das linhas*/
     font-size: 30px;
+    border-radius:15% ;/* borda arredondada*/
+    margin: 20px; /* margem*/
 }
 
-.Bloco input {
-    padding: 8px;
-    width: 200px;
-}
-
-.Buscar button {
-    padding: 10px 20px;
-    background-color: #004aad;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.destino p {
-    font-size: 1.2em;
-    color: #004aad;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.destino h3 {
-    margin: 10px 0;
-}
-
-.informacoes {
-    background-color: white;
+.forma_de_pagamento{
     display: flex;
-    gap: 18px;
-    font-size: 25px;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    border: solid 1px;
-    border-radius: 50px;
-    transition: 1s;
-    box-shadow: 0 0px 30px rgba(0, 0, 0, 5);
+    flex-direction: column; /* arrumar em colunas*/
+    align-items: center;/* alinhar itens centro*/
+    gap: 30px; /* espaco entre itens*/
 }
 
+<<<<<<< Updated upstream
 .informacoes:hover {
     transform: translateY(-10px) scale(1.03);
 }
@@ -452,6 +489,17 @@ h1 {
     bottom: 26px;
     right: 20px;
     border-radius: 15px;
+=======
+.footer{
+   color: var(--cor-letra-rodape);
+   background-color: var(--cor-rodape); /* fundo rodape*/
+   height: 30px; /* define altura*/
+   font-size: 20px;
+   text-align: center; /* alinhar texto no centro*/
+   position: fixed; /* ficar fixado para nao se mexer qnd mexer pagina*/
+   bottom: 0; /*gruda na parte de baixo*/
+   width: 100vw; /* viewport width, largura da janela de visualizacao, ex: 50% ira ocupar metade da tela*/
+>>>>>>> Stashed changes
 }
 
 @media (max-width: 600px) {
