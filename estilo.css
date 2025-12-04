@@ -106,11 +106,10 @@ nav a {
 
 .Busca {
     display: flex;
-    padding: 30px;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 30px 11rem;
 }
 
 .cabecalho-principal {
@@ -161,15 +160,18 @@ nav a {
     }
 }
 
-.bot {
+/* .bot {
     margin: auto;
     margin-right: 20px;
-}
+} */
 
 .Bloco {
     display: flex;
     flex-direction: column;
-    height: 20vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: 20vh; */
 }
 
 .formulario {
@@ -451,15 +453,16 @@ h1 {
     right: 20px;
     border-radius: 15px;
 }
+
 @media (max-width: 600px) {
-    
+
     .pai {
         gap: 30px;
         margin: 20px;
     }
 
     .n1 {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .informacoes2 {
@@ -496,13 +499,17 @@ h1 {
             transform: translateX(-10%);
         }
     }
+
     .carousel-container {
         width: auto;
         height: 400px;
     }
-    
-    footer form{
+
+    footer form {
         max-width: 300px;
     }
 
+    .Busca {
+        flex-direction: column;
+    }
 }
