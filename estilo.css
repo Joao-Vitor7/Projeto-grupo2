@@ -459,9 +459,11 @@ h1 {
     h2 {
         font-size: 20px;
     }
+
     .loguinho {
         display: none;
     }
+
     .pai {
         gap: 30px;
         margin: 20px;
@@ -496,7 +498,7 @@ h1 {
         height: 20px;
     }
 
-    @keyframes slidein {
+    /* @keyframes slidein {
         from {
             transform: translateX(100vw);
         }
@@ -504,7 +506,7 @@ h1 {
         to {
             transform: translateX(-50%);
         }
-    }
+    } */
 
     .carousel-container {
         width: auto;
@@ -517,6 +519,6 @@ h1 {
 
     .Busca {
         flex-direction: column;
-    }    
+    }
 
 }
