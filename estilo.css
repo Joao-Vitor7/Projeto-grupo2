@@ -107,10 +107,11 @@ nav a {
 
 .Busca {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
 .cabecalho-principal {
@@ -470,7 +471,7 @@ h1 {
     }
 
     .n1 {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .informacoes2 {
