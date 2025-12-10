@@ -148,12 +148,16 @@ body {
     p{
         display: flex;
         flex-wrap: wrap;
-        font-size: 40px;
+        font-size: 25px;
         margin: 8px;
     }
 
     .footer{
         position: relative;
+    }
+
+    .textohorario{
+        border-radius: 20px;
     }
 
 }
