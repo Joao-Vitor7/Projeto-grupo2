@@ -7,7 +7,7 @@ function fechar_cartao() { //Ao clicar no botão "Fechar Cartão", a display pro
 
 function card1() { //Realiza uma tarefa especifica quando é chamada
     document.getElementById('cartao').style.display = 'block'; //Faz com que o card fique invisivel antes de tocar
-    document.getElementById('cartao_titulo').innerHTML = 'Belém - Luxo';//Faz o título aparecer dentro do cartao
+    document.getElementById('cartao_titulo').innerHTML = 'Ilha de marajó - Luxo';//Faz o título aparecer dentro do cartao
     document.getElementById('cartao_texto').innerHTML = '<br>✈️ Aéreo: Passagens aéreas de ida e volta para Belém (BEL) - Aeroporto Internacional Val-de-Cans.<br> 🏨 Hospedagem: (6 noites): 3 Noites em Belém: Hotel Boutique de luxo, 3 Noites na Ilha do Marajó: Pousada de Charme <br>🚌 Transfer: Traslados Privativos em Belém (Aeroporto/Hotel), Traslados na Ilha. <br> 🎟️ Passeios: Visita guiada ao Mercado Ver-o-Peso, Estação das Docas, e outros pontos históricos.';//Faz as informações aparecer dentro do card
     document.getElementById('imagem').innerHTML = '<img src="./Imagens/fotos/Norte/IlhadeMarajo.png" width="400" height="400">'; //A imagem de localizaçào que está com link
     document.getElementById('localizacao').href = 'https://www.google.com/maps/place/Bel%C3%A9m,+PA/@-1.3413321,-48.7587307,11z'; //FA foto que está dentro do card 
